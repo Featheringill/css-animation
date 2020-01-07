@@ -1,0 +1,117 @@
+/* css reset */
+body {
+  padding: 0;
+  margin: 0;
+}
+.square-1 {
+  height: 100px;
+  width: 100px;
+  background-color: lightblue;
+  position: absolute;
+  animation-name: move-square-1;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  border-radius: 0 0 0 0;
+  top: 0;
+  left: 0;
+  /* transition: border 0.15s ease-in-out; */
+}
+.square-2 {
+  height: 100px;
+  width: 100px;
+  background-color: lightcoral;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  animation-name: move-square-2;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+.square-3 {
+  height: 100px;
+  width: 100px;
+  background-color: lightgreen;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation-name: move-square-3;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+.square-4 {
+  height: 100px;
+  width: 100px;
+  background-color: lightgoldenrodyellow;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  animation-name: move-square-4;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+/* keyframes */
+
+@keyframes move-square-1 {
+  0% {
+    background-color: lightblue;
+    border-radius: 0 0 0 0;
+    top: 0;
+    left: 0;
+  }
+  100% {
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    border-radius: 0 0 100% 0;
+  }
+}
+
+@keyframes move-square-2 {
+  0% {
+    background-color: lightcoral;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 0;
+  }
+  100% {
+    background-color: black;
+    top: 50%;
+    right: 50%;
+    border-radius: 0 0 0 100%;
+  }
+}
+
+@keyframes move-square-3 {
+  0% {
+    background-color: lightgreen;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 0 0;
+  }
+  100% {
+    background-color: black;
+    bottom: 50%;
+    left: 50%;
+    border-radius: 0 100% 0 0;
+  }
+}
+
+@keyframes move-square-4 {
+  0% {
+    background-color: lightgoldenrodyellow;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 0 0 0 0;
+  }
+  100% {
+    background-color: black;
+    bottom: 50%;
+    right: 50%;
+    border-radius: 100% 0 0 0;
+  }
+}
+
+/* hover styles */
+div:hover {
+  border: solid white 2px;
+}
